@@ -3,31 +3,40 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255; /* Set foreground color to white */
+  --background-start-rgb: 0, 0, 0; /* Set background start color to black */
+  --background-end-rgb: 0, 0, 0; /* Set background end color to black */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0; /* Set foreground color to black for dark mode */
+    --background-start-rgb: 255, 255, 255; /* Set background start color to white for dark mode */
+    --background-end-rgb: 255, 255, 255; /* Set background end color to white for dark mode */
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--foreground-rgb)); /* Use the foreground color for text */
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+          to bottom,
+          transparent,
+          rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb)); /* Use the background colors for the gradient */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.border-highlight {
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  display: inline-block;
+  padding: 0 10px 10px 0;
 }

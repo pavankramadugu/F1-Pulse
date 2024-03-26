@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# F1 Pulse
+
+F1 Pulse is a Next.js web application that provides enthusiasts with comprehensive Formula 1 statistics and information. You can access data from 1950 related to races, drivers, constructors, and circuits.
+
+## Data Sources
+The app utilizes the Ergast F1 Developer API, a comprehensive source for historical Formula 1 data since 1950, to ensure accurate and up-to-date information.
+
+## Features
+- Race Schedule: View the schedule of upcoming and past Formula 1 races, including dates, locations, and circuit details.
+- Race Results: Access detailed results of each race, including the finishing positions of drivers and teams.
+- Standings: Check the current standings of drivers and constructors in the championship.
+- Driver Information: Get detailed profiles of Formula 1 drivers, including their biographies, statistics, and performance history.
+- Constructor Information: Learn about the teams competing in Formula 1, including their history, achievements, and current lineup.
+- Circuit Information: Explore information about Formula 1 circuits, including track layouts, lap records, and historical data.
+- Finishing Status: Analyze the finishing status of drivers in each race, including classifications and reasons for retirements.
+- Lap Times: Review the lap times of drivers during a race, providing insights into their performance and strategy.
+- Pit Stops: Examine the pit stop statistics of teams and drivers, including the number of stops and time spent in the pits.
 
 ## Getting Started
 
-First, run the development server:
+First, Install the dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
